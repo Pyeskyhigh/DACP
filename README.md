@@ -1,4 +1,4 @@
-# DigitalAssetCentralPortfolio
+# Digital Asset Central Portfolio
 A digital asset personal portfolio using CCXT
 
 DACP is a library that pools together the ledger history and balance sheets of all the exchanges an
