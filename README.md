@@ -9,3 +9,7 @@ information from exchanges.
 [CCXT](https://github.com/ccxt/ccxt) serves as a library for the access to all the API's for Cryptoasset Exchanges. By using
 this as a tool, DACP will work by using this library as a way to access all exchanges and build a
 dataset with all the personal information of a user.
+
+The following is a preliminary design of the layout of the library.
+
+![Alt text](/../<master>/path/to/image.png?raw=true "Preliminary plan for Library.png")
