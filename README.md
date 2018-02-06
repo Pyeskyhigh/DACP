@@ -12,4 +12,4 @@ dataset with all the personal information of a user.
 
 The following is a preliminary design of the layout of the library.
 
-![Alt text](/../<master>/path/to/image.png?raw=true "Preliminary plan for Library.png")
+![picture](./misc/Preliminary-plan-for-Library.png)
