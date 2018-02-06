@@ -27,16 +27,16 @@ The following is a preliminary design of the layout of the library.
 
 **Command Details:**
 
-* Add Exchange:
-    Params = Exchange name, API key, OTHER INFO TO ACCESS ACCOUNT.
-    Return = confirmation of adding exchange or error.
+* Add Exchange: <br />
+   Params = Exchange name, API key, OTHER INFO TO ACCESS ACCOUNT. <br />
+   Return = confirmation of adding exchange or error.
 
-* Get All Exchanges:
-    Return = JSON of all exchanges (hyperlink to Design of master dataset)
+* Get All Exchanges: <br />
+   Return = JSON of all exchanges (hyperlink to Design of master dataset)
 
-* Remove exchange:
-    Params: Exchange name.
+* Remove exchange: <br />
+    Params: Exchange name. <br />
     Return: Message confirming the change.
 
-* Clear all list: Clears the dataset of all exchanges to start from scratch.
+* Clear all list: Clears the dataset of all exchanges to start from scratch. <br />
     Return: confirmation message.
