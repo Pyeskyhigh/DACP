@@ -6,6 +6,7 @@ var bodyParser = require ('body-parser');
 
 app.use(morgan('dev'));
 
+const API_KEY = fs.readFileSync("./API_KEY.txt").toString(); //This is your API key
 
 // Very basic example of app.get (URL, function (requestObject, responseObject))
 // app.get ('/', function (req, res)
