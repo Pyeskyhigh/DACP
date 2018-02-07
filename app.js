@@ -1,37 +1,42 @@
-var express = require('express');
-var morgan = require('morgan'); //another useful library for NODE.js
-var port = process.env.PORT || 8888;
-var app = express();
-var bodyParser = require ('body-parser');
+const express = require('express');
+const morgan = require('morgan'); //another useful library for NODE.js
+const app = express();
+const bodyParser = require('body-parser');
+
+// -- Setting Morgan and Body Parser --
 
 app.use(morgan('dev'));
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
 
-const API_KEY = fs.readFileSync("./API_KEY.txt").toString(); //This is your API key
+//++ Add in access-control & such
 
-// Very basic example of app.get (URL, function (requestObject, responseObject))
-// app.get ('/', function (req, res)
-// {
-//   res.sendFile(__dirname + '/home.html');
-// });
 
-// This is example code from a previous project where I'm interfacing with MongoDB (your interfacing with CCXT will be similar — I'm not exactly familiar with that). You may need to end up using nested callback functions as implemented below to avoid async problems.
+// -- Routes that can be accessed --
 
-// app.get ('/results', function (req, res)
-// {
-//   var courses = [];
-//   MongoClient.connect(url, function(err, db) {
-//     if (err) throw err;
-//     var cursor = db.collection('courses').find();
-//     cursor.forEach
-//     ( function (doc)
-//       {
-//         courses.push (doc.name);
-//       },
-//       function (err, doc)
-//       {
-//         if (err) throw err;
-//         res.render ('chooseResults', {courses: courses});
-//       }
-//     );
-//   });
-// });
+const editDataRoutes = require('./api/routes/edit');
+const accessDataRoutes = require('./api/routes/access');
+
+app.use('/edit', editDataRoutes);
+app.use('/access', accessDataRoutes);
+
+// -- Thrown Errors in case it is not picked up by fields above --
+
+app.use((req, res, next) => {
+  const error = new Error('Not Found');
+  error.status = 404;
+  next(error);
+})
+
+app.use((error, req, res, next) => {
+  res.status(error.status || 500);
+  res.json({
+    error: {
+      message: error.message
+    }
+  });
+});
+
+//const API_KEY = fs.readFileSync("./ExchangeKeys.txt").toString(); //This is your API key
+
+module.exports = app;

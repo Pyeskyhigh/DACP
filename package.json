@@ -1,0 +1,37 @@
+{
+  "name": "dacp",
+  "version": "1.0.0",
+  "description": "NODE.js based API for a central portfolio",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pyeskyhigh/DACP.git"
+  },
+  "keywords": [
+    "DACP",
+    "Ledger",
+    "Personal",
+    "Transactions"
+  ],
+  "author": "Daniel Pye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pyeskyhigh/DACP/issues"
+  },
+  "homepage": "https://github.com/Pyeskyhigh/DACP#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.12"
+  }
+}
