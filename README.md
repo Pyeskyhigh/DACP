@@ -23,7 +23,7 @@ Conduct](https://github.com/Pyeskyhigh/DACP/blob/master/CODE_OF_CONDUCT.md).
 
 The following is a preliminary design of the layout of the library.
 
-![picture](./misc/Preliminary-plan-for-Library.png)
+![picture](./misc/Layout_Of_API.png)
 
 **Command Details:**
 
@@ -40,7 +40,7 @@ The following is a preliminary design of the layout of the library.
 
 * Clear all list: Clears the dataset of all exchanges to start from scratch. <br />
     Return: confirmation message.
-    
+
 **Ordering of Data:**
 
 * Holdings <br />
