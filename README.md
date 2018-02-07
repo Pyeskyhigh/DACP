@@ -23,7 +23,7 @@ Conduct](https://github.com/Pyeskyhigh/DACP/blob/master/CODE_OF_CONDUCT.md).
 
 The following is a preliminary design of the layout of the library.
 
-![picture](./misc/Layout_Of_API.png)
+![picture](./misc/Layout_of_API.png)
 
 **Command Details:**
 
