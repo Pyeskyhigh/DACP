@@ -40,3 +40,17 @@ The following is a preliminary design of the layout of the library.
 
 * Clear all list: Clears the dataset of all exchanges to start from scratch. <br />
     Return: confirmation message.
+    
+**Ordering of Data:**
+
+* Holdings <br />
+Transactions ordered by coins <br />
+Title of set is ordered by total of current price of holdings of the coin <br />
+Ordered Alphabetically <br />
+The GET request returns the data <br />
+
+* Chronological <br />
+Transactions ordered chronologically <br />
+Can be used to display overall growth of portfolio. <br />
+Title set is ordered by Month, Week, and Day <br />
+The GET request returns the data
