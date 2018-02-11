@@ -15,7 +15,7 @@ cryptoasset exchanges, to pull all the information from the particular exchanges
 
 ## How it Works
 
-* API access
+### API access
 
 There are certain security protocols that exchanges use to privatize user personal information on
 exchanges. In order to go through security through the API, a user needs to ask for an API key in
@@ -30,7 +30,7 @@ route, the library can build the file.
 This file is included in the .gitignore to ensure that contributors do not share their personal
 information while contributing.
 
-* Process of Building the Dataset
+### Building the Dataset
 
 The JSON dataset containing all transactions is created at the launch, but empty. Once exchanges
 are added to the API_KEYS file, DACP then begins to work with CCXT to contact the given exchange.
@@ -44,46 +44,46 @@ The following is the layout of the API routes
 
 ![picture](./misc/Layout_of_API.png)
 
-**Route Details:**
+### Route Details
 
-* Edit (./edit)
+**Edit (./edit)**<br />
 In the edit route, the user is capable of editing the dataset in multiple ways. The following is the
 breakdown of how the dataset can be edited:
 
- - Get (GET request)
+ - Get (GET request)<br />
  This request returns the status of the dataset. Some of the details will include the list of
  exchanges, list of assets, order type, total holdings, etc.
 
- Param: None
- Return: JSON of the status of the dataset.
+     Param: None <br />
+     Return: JSON of the status of the dataset.
 
- - Add (PUT request)
+ - Add (PUT request)<br />
  This request allows for the user to add an exchange they belong to onto the dataset. The user is
  prompted to input the proper validation information so that the software can access the users
  personal information within the exchange API. Adding an exchange to the dataset will automatically
  update the API_KEYS document for future use.
 
- Param: (exchange ID, API KEY)
- Return: Confirmation message
+     Param: (exchange ID, API KEY) <br />
+     Return: Confirmation message
 
- - Delete (DELETE request)
+ - Delete (DELETE request) <br />
  This request allows for the user to delete an exchange from the dataset. If the user would like to
  clear all data, they may input "all" as a parameter. Deleting an exchange to the dataset will
  automatically update the API_KEYS document.
 
- Param: (exchange ID or "all")
- Return: Confirmation Message
+     Param: (exchange ID or "all") <br />
+     Return: Confirmation Message
 
-* Access(./access)
+**Access (./access)**
 
- - Get (GET request)
+ - Get (GET request) <br />
  This request returns the dataset in the set order and with the appropriate exchanges that
  specified by the user.
 
- Param: None
- Return: Dataset of information
+     Param: None <br />
+     Return: Dataset of information
 
-**Options to Order Data**
+### Options to Order Data
 
 The user has the option to order the transactions by the exchange it was made on, the type of asset
 that is being traded, or by the transactions themselves. The default order in which the transaction
@@ -91,13 +91,13 @@ data is formatted in is by alphabetical order of the exchange it belongs to. The
 breakdown of ordering options:
 
 * by Exchange (default) <br />
-Exchanges can either be ordered by alphabetical order or size of the holding(in USD)
+Exchanges can either be ordered by alphabetical order or size of the holding (in USD).
 
 * by Asset <br />
-Assets are can be ordered by either alphabetical order or size of the holding(in USD)
+Assets are can be ordered by either alphabetical order or size of the holding (in USD).
 
 * by Transactions <br />
-Transactions can be ordered by either chronological order or by size(in USD)
+Transactions can be ordered by either chronological order or by size (in USD).
 
 ## License
 
