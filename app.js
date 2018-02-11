@@ -9,13 +9,16 @@ app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
-//++ Add in access-control & such
+//++ Add in access-control & such ++
 
 
 // -- Routes that can be accessed --
 
 const editDataRoutes = require('./api/routes/edit');
 const accessDataRoutes = require('./api/routes/access');
+
+// const editOrderRoute = require('./api/routes/order');
+// app.use('/order', editOrderRoute);
 
 app.use('/edit', editDataRoutes);
 app.use('/access', accessDataRoutes);

@@ -2,8 +2,6 @@
 
 ## What can I do?
 
-### Todo List
-
 ### New Ideas
 
 ## Submitting Pull Requests
