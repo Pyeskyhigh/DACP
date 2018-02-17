@@ -28,6 +28,8 @@
   "homepage": "https://github.com/Pyeskyhigh/DACP#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "ccxt": "^1.10.1094",
+    "dotenv": "^5.0.0",
     "express": "^4.16.2",
     "morgan": "^1.9.0"
   },
