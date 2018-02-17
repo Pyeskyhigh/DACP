@@ -12,12 +12,21 @@ app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
-(async function () {
-  console.time('Getting My Trades');
-  var myBitfinexTrades = await getMyTrades ("bitfinex");
-  console.timeEnd('Getting My Trades');
-  console.table(myBitfinexTrades);
-}) ();
+var myTrades = {};
+var myExchanges = ["bitfinex"]; // Add to list as you go along
+
+getAllMyTrades();
+
+async function getAllMyTrades () {
+  for (var i = 0; i < myExchanges.length; i++) {
+    var currentExchange = myExchanges [i];
+    console.time(`Getting My ${currentExchange} Trades`);
+    var currentExchangeTrades = await getMyTrades (currentExchange);
+    console.timeEnd(`Getting My ${currentExchange} Trades`);
+
+    myTrades [currentExchange] = currentExchangeTrades;
+  }
+}
 
 function isFunctionalityPossible (exchange, functionName) {
   console.log(exchange.has[functionName]);
