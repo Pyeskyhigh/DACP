@@ -32,6 +32,22 @@ information while contributing.
 
 ### Building the Dataset
 
+You should use DACP's dataset.js to build your dataset of personal information across multiple exchanges. To do this securely (using environment variables for your API key and secret key) use the following steps:
+
+In the directory of your project, create a .env file. You can do this in the terminal, or using a text editor application. To do this in the terminal, navigate to the current project directory. Type `touch .env` and hit enter. Then type `open .env` and hit enter. This would have opened a .env file in a text editor. Then add the API key and secret key as follows:
+
+`EXCHANGENAME_apiKey=YOURAPIKEY`
+
+`EXCHANGENAME_secret=YOURSECRETKEY`
+
+For example, if I were using bitfinex, I would enter my keys in the .env file on separate lines as follows. Remember, you can add as many exchanges' keys as you want.
+
+`bitfinex_apiKey=MYAPIKEY`
+
+`bitfinex_secret=MYSECRETKEY`
+
+In dataset.js, just call the getAllMyTrades() function to store all your trades for each exchange in the `myTrades` dictionary.
+
 The JSON dataset containing all transactions is created at the launch, but empty. Once exchanges
 are added to the API_KEYS file, DACP then begins to work with CCXT to contact the given exchange.
 Once the information is received, the transactions will be added to the JSON file in chronological
