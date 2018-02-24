@@ -6,16 +6,22 @@ appreciated.
 
 ## List
 
-* Work on a way to access the CCXT API. All Exchanges offered by the CCXT library should be easily
-  accessed and interactive.
+* Add a general information section to the dataset. This could include information about all of the
+data. For instance, categories like all coins and the total balance of the coin, total balance of
+portfolio, array of all exchanges, array of all coins, etc.
 
-* Create a framework to hold the transactions dataset. This dataset must be accessible by the API
-  commands. Methods should be made to edit the dataset and make it possible to add, delete, order,
-  the information. The ways in which it should be customizable is shown in the README explanation.
+* The code needs to be made more efficient. Since there are delays because of the rate limits of the
+exchanges, it takes time to create the dataset. A more efficient method to work with the rate limits
+needs to be implemented.
 
-* At the moment the API_KEYS file will be stored on the users computer, this may change how the API
-  is accessed and what the commands may return. As of now, there should be a way to pull the data
-  from the API_KEYS file to automatically work with the CCXT library.
+* The dataset should be saved to a file by the end of the process. Instead of restarting each time,
+a user can load the information from the file. To keep the information current, there should be
+options to update the data. For instance, a command to update the balance of coins in a particular
+exchange and a command to update the price in USD of of all coins.
+
+* An input should be made to include the holdings of coins in cold wallets as well to be able to
+calculate the value of an investors complete portfolio.
+
 
 More will soon come. If there are any questions on the details provided above, please contact me at
 danieljpye12@gmail.com.

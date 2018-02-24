@@ -8,12 +8,3 @@
 ### New Ideas
   If you would like to share your ideas as to how the library can move forward. Please contact me
   at danieljpye12@gmail.com. I will be sure to respond as quickly as I can.
-
-<!-- ## Submitting Pull Requests
-
-
-### Getting started
-
-### Running the tests
-
-### Updating the docs -->
