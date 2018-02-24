@@ -22,6 +22,5 @@ exchange and a command to update the price in USD of of all coins.
 * An input should be made to include the holdings of coins in cold wallets as well to be able to
 calculate the value of an investors complete portfolio.
 
-
 More will soon come. If there are any questions on the details provided above, please contact me at
 danieljpye12@gmail.com.
