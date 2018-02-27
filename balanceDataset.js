@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 // List of the User Exchanges
-var myExchanges = ['bittrex', 'bitfinex'];
+var myExchanges = [];
 
 // Calls all Functions
 (async () => {

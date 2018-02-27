@@ -22,5 +22,13 @@ exchange and a command to update the price in USD of of all coins.
 * An input should be made to include the holdings of coins in cold wallets as well to be able to
 calculate the value of an investors complete portfolio.
 
+* Add compatibility for other base country and crypto currencies.
+
+* Translating the code to other languages can be helpful in the expansion of DACP.
+
+These changes can be added to both the transactionDataset.js or balanceDataset.js files. In addition
+to all listed above for the transaction dataset, it would be helpful if the file were formatted just
+as the balanceDataset file is formatted.
+
 More will soon come. If there are any questions on the details provided above, please contact me at
 danieljpye12@gmail.com.

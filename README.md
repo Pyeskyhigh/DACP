@@ -4,15 +4,25 @@ A library for cryptoasset investors to access their portfolio
 In the cryptosphere, there are many investors that spend their time on cryptoasset exchanges. Even though it is considered to be unsafe, traders still will keep their funds short term trades and others. Since many investors use multiple
 exchanges (because they all differ in many ways), it is difficult to keep track of one's portfolio and true asset value.
 
-DACP serves as a way for investors and traders to access personal information from the exchanges they use. The main focus of the repository is to gather an investor's holdings and the value from the cryptoasset exchanges they use in one central dataset named the balanceDataset. Another project that is in development is the transactionDataset, a dataset which aims to hold an investors trading transactions in one dataset, which can be useful in assessing the profitability of a certain transacetion and much more. 
+DACP serves as a way for investors and traders to access personal information from the exchanges they use. The main focus of the repository is to gather an investor's holdings and the value from the cryptoasset exchanges they use in one central dataset named the balanceDataset. Another project that is in development is the transactionDataset, a dataset which aims to hold an investors trading transactions in one dataset, which can be useful in assessing the profitability of a certain transacetion and much more.
 
 The repository will use [CCXT](https://github.com/ccxt/ccxt), a library that accesses the API from
 cryptoasset exchanges, to pull all the information needed from the particular exchanges.
 
-## How to set up the Software
+## How to Use
 
-### Clone the Repository
+### Downloading the Repository
 
+If you are a beginner to using git and github, please look at the [resources](https://github.com/Pyeskyhigh/DACP/blob/master/RESOURCES.md) provided to learn the steps
+needed to use DACP.
+
+Once the repository has been forked, and that has been cloned, find a directory through terminal to
+place the DACP directory on your computer. Once inside the DACP folder, call the following function.
+
+`npm install`
+
+This should download everything needed for the directory to function. Follow the next steps to fill
+in your exchange information.
 
 ### Exchange API Access
 
@@ -76,4 +86,3 @@ This repository is licensed under the MIT License. Details can found in the [lic
 Help is greatly appreciated as long as people follow the [Contributing](https://github.com/Pyeskyhigh/DACP/blob/master/CONTRIBUTING.md) rules and the [Code of Conduct](https://github.com/Pyeskyhigh/DACP/blob/master/CODE_OF_CONDUCT.md).
 
 Please refer to the [to do list](https://github.com/Pyeskyhigh/DACP/blob/master/todo.md) to see where help is needed.  
-

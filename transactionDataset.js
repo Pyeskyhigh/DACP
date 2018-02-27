@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 var myTrades = {};
-var myExchanges = ["bitfinex"]; // Add to list as you go along
+var myExchanges = []; // Add to list as you go along
 
 getAllMyTrades();
 
